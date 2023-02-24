@@ -1,2 +1,2 @@
 tabs: ['sklearn_practice.py']
-terminals: ['pip install sklearn; pip install numpy']
+terminals: ['pip install numpy; pip install pandas; pip install -U scikit-learn']
