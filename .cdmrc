@@ -1,0 +1,2 @@
+tabs: ['sklearn_practice.py']
+terminals: ['pip install sklearn; pip install numpy']
