@@ -15,13 +15,12 @@ X_train=sc_X.fit_transform(X_train)
 X_test=sc_X.transform(X_test)
 
 from sklearn.preprocessing import PolynomialFeatures
-# Apply the degree and fit with the dataset
 
+# Convert X_train and X_test features into 2 degree polynomial features.
 # START EDIT
-poly_reg=PolynomialFeatures(degree=2)
-X_poly_train=poly_reg.fit_transform(X_train)
-X_poly_test=poly_reg.transform(X_test)
-print(X_poly_train.shape, X_poly_test.shape)
+poly_reg=None
+X_poly_train=[]
+X_poly_test=[]
 # END EDIT
 
 from sklearn.linear_model import LinearRegression
