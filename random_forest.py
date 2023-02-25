@@ -19,13 +19,12 @@ from sklearn.ensemble import RandomForestClassifier
 
 # START EDIT
 # Create a Random forest classifier with n_estimators=10,criterion='entropy',random_state=0.
-classifier_random_forest=RandomForestClassifier(n_estimators=10,criterion='entropy',random_state=0)
+classifier_random_forest=None
 
 # Call fit method on the training dataset
-classifier_random_forest.fit(X_train,y_train)
 
 # Store predictions of X_test in y_pred
-y_pred=classifier_random_forest.predict(X_test)
+y_pred=[]
 # END EDIT
 
 # To calculate the accuracy of the model
