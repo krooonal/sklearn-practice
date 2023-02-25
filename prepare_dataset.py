@@ -21,6 +21,6 @@ from sklearn.preprocessing import StandardScaler
 sc_X=StandardScaler()
 
 # START EDIT
-X_train=[]
-X_test=[]
+X_train_sc= []
+X_test_sc =[]
 # END EDIT
