@@ -1,2 +1,2 @@
-tabs: ['evaluation.py']
+tabs: ['naive_bayes.py']
 terminals: ['pip install numpy; pip install pandas; pip install -U scikit-learn']
