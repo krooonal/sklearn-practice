@@ -15,6 +15,3 @@ print(train_features)
 print(test_features)
 print(transformed_train)
 print(transformed_test)
-
-
-
