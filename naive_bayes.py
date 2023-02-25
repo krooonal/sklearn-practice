@@ -10,20 +10,21 @@ y = data["target"]
 from sklearn.model_selection import train_test_split
 X_train,X_test,y_train,y_test=train_test_split(X,y,test_size=0.25,random_state=0)
 
-# Exercise 3: Scale the data using standard scaler
 from sklearn.preprocessing import StandardScaler
 sc_X=StandardScaler()
 X_train=sc_X.fit_transform(X_train)
 X_test=sc_X.transform(X_test)
 
 from sklearn.naive_bayes import GaussianNB
-# Call the Naive Bayes
+
+# START EDIT
+# Create a Gaussian Naive Bayes classifier
 nb_classifier=GaussianNB()
 
-# fit the classifier model with the data
+# Call fit method on the training dataset
 nb_classifier.fit(X_train,y_train)
 
-#Predicting the test set result
+# Store predictions of X_test in y_pred
 y_pred=nb_classifier.predict(X_test)
 
 # To calculate the accuracy of the model
