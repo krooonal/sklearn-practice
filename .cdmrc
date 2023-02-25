@@ -1,2 +1,2 @@
-tabs: ['sklearn_practice.py']
+tabs: ['encoder.py']
 terminals: ['pip install numpy; pip install pandas; pip install -U scikit-learn']
