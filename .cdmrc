@@ -1,2 +1,2 @@
-tabs: ['poly_reg.py']
+tabs: ['cross_validation.py']
 terminals: ['pip install numpy; pip install pandas; pip install -U scikit-learn']
