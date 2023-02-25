@@ -19,13 +19,12 @@ from sklearn.neighbors import KNeighborsClassifier
 
 # START EDIT
 # Create a K Neighbors classifier with n_neighbors=2.
-knn_classifier=KNeighborsClassifier(n_neighbors=2)
+knn_classifier=None
 
 # Call fit method on the training dataset
-knn_classifier.fit(X_train,y_train)
 
 # Store predictions of X_test in y_pred
-y_pred=knn_classifier.predict(X_test)
+y_pred=[]
 # END EDIT
 
 # To calculate the accuracy of the model
