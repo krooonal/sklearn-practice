@@ -16,14 +16,17 @@ X_train=sc_X.fit_transform(X_train)
 X_test=sc_X.transform(X_test)
 
 from sklearn.ensemble import RandomForestClassifier
-# Call the Random Forest model
+
+# START EDIT
+# Create a Random forest classifier with n_estimators=10,criterion='entropy',random_state=0.
 classifier_random_forest=RandomForestClassifier(n_estimators=10,criterion='entropy',random_state=0)
 
-# fit the classifier model with the data
+# Call fit method on the training dataset
 classifier_random_forest.fit(X_train,y_train)
 
-#Predicting the test set result
+# Store predictions of X_test in y_pred
 y_pred=classifier_random_forest.predict(X_test)
+# END EDIT
 
 # To calculate the accuracy of the model
 acc_random_forest=accuracy_score(y_test, y_pred)
