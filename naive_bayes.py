@@ -19,13 +19,13 @@ from sklearn.naive_bayes import GaussianNB
 
 # START EDIT
 # Create a Gaussian Naive Bayes classifier
-nb_classifier=GaussianNB()
+nb_classifier=None
 
 # Call fit method on the training dataset
-nb_classifier.fit(X_train,y_train)
 
 # Store predictions of X_test in y_pred
-y_pred=nb_classifier.predict(X_test)
+y_pred=[]
+# END EDIT
 
 # To calculate the accuracy of the model
 acc_nb=accuracy_score(y_test, y_pred)
