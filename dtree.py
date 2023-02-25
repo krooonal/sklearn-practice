@@ -18,12 +18,12 @@ X_test=sc_X.transform(X_test)
 from sklearn.tree import DecisionTreeClassifier
 
 # START EDIT
-# Create a SVC classifier with criterion='entropy',random_state=0.
+# Create a Decision Tree classifier with criterion='entropy',random_state=0.
 classifier_decision_tree=None
 
-# fit the classifier model with the data
+# Call fit method on the training dataset
 
-#Predicting the test set result
+# Store predictions of X_test in y_pred
 y_pred=[]
 # END EDIT
 
