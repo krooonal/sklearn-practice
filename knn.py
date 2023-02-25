@@ -10,21 +10,23 @@ y = data["target"]
 from sklearn.model_selection import train_test_split
 X_train,X_test,y_train,y_test=train_test_split(X,y,test_size=0.25,random_state=0)
 
-# Exercise 3: Scale the data using standard scaler
 from sklearn.preprocessing import StandardScaler
 sc_X=StandardScaler()
 X_train=sc_X.fit_transform(X_train)
 X_test=sc_X.transform(X_test)
 
 from sklearn.neighbors import KNeighborsClassifier
-# Call the K-Nearest model
+
+# START EDIT
+# Create a K Neighbors classifier with n_neighbors=2.
 knn_classifier=KNeighborsClassifier(n_neighbors=2)
 
-# fit the classifier model with the data
+# Call fit method on the training dataset
 knn_classifier.fit(X_train,y_train)
 
-#Predicting the test set result
+# Store predictions of X_test in y_pred
 y_pred=knn_classifier.predict(X_test)
+# END EDIT
 
 # To calculate the accuracy of the model
 acc_knn=accuracy_score(y_test, y_pred)
