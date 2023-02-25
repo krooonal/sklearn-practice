@@ -18,13 +18,12 @@ from sklearn.linear_model import LogisticRegression
 # START EDIT
 # Create a logistic regression classifier.
 # Use random_state=0,penalty='l2',C=0.1
-logistic_classifier=LogisticRegression(random_state=0,penalty='l2',C=0.1)
+logistic_classifier=None
 
 # Call fit method on the training dataset
-logistic_classifier.fit(X_train,y_train)
 
 # Store predictions of X_test in y_pred
-y_pred=logistic_classifier.predict(X_test)
+y_pred=[]
 # END EDIT
 
 print("Actual targets: ", y_test.to_numpy())
