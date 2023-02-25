@@ -25,14 +25,18 @@ y_pred=logistic_classifier.predict(X_test)
 # To calculate the accuracy of the model
 from sklearn.metrics import accuracy_score
 from sklearn.metrics import confusion_matrix
+from sklearn.metrics import classification_report
 
 # START EDIT
-acc_logistic=accuracy_score(y_test, y_pred)
+acc_logistic=None
 
 # To get the confusion Matrix
-cm_logistic=confusion_matrix(y_test,y_pred)
+cm_logistic=None
+
+report=None
 # END EDIT
 
 print('Accuracy of Logistic Regression:',acc_logistic*100)
 print('Confusion Matrix is')
 print(cm_logistic)
+print(report)
