@@ -1,2 +1,2 @@
-tabs: ['svm.py']
+tabs: ['dtree.py']
 terminals: ['pip install numpy; pip install pandas; pip install -U scikit-learn']
