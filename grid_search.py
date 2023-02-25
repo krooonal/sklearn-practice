@@ -26,6 +26,7 @@ tuned_parameters = [
 ]
 
 # Tune the parameters of KNeighborsClassifier() (tuned_parameters) using GridSearchCV.
+# Use scoring='accuracy', cv=3.
 # START EDIT
 grid_search = GridSearchCV(
     KNeighborsClassifier(), tuned_parameters, scoring='accuracy', cv=3
