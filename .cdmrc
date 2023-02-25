@@ -1,2 +1,2 @@
-tabs: ['prepare_dataset.py']
+tabs: ['logistic_reg.py']
 terminals: ['pip install numpy; pip install pandas; pip install -U scikit-learn']
