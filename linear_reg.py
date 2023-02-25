@@ -17,13 +17,12 @@ from sklearn.linear_model import LinearRegression
 
 # START EDIT
 # Create a linear regressor.
-regressor_lr =LinearRegression()
+regressor_lr = None
 
 # Call fit method on the training dataset
-regressor_lr.fit(X_train,y_train)
 
 # Store predictions of X_test in y_pred
-y_pred=regressor_lr.predict(X_test)
+y_pred=[]
 # END EDIT
 
 from sklearn.metrics import mean_squared_error
