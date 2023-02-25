@@ -10,21 +10,22 @@ y = data["target"]
 from sklearn.model_selection import train_test_split
 X_train,X_test,y_train,y_test=train_test_split(X,y,test_size=0.25,random_state=0)
 
-# Exercise 3: Scale the data using standard scaler
 from sklearn.preprocessing import StandardScaler
 sc_X=StandardScaler()
 X_train=sc_X.fit_transform(X_train)
 X_test=sc_X.transform(X_test)
 
 from sklearn.tree import DecisionTreeClassifier
-# Call the Decision Tree model
-classifier_decision_tree=DecisionTreeClassifier(criterion='entropy',random_state=0,)
+
+# START EDIT
+# Create a SVC classifier with criterion='entropy',random_state=0.
+classifier_decision_tree=None
 
 # fit the classifier model with the data
-classifier_decision_tree.fit(X_train,y_train)
 
 #Predicting the test set result
-y_pred=classifier_decision_tree.predict(X_test)
+y_pred=[]
+# END EDIT
 
 # To calculate the accuracy of the model
 acc_decision=accuracy_score(y_test, y_pred)
