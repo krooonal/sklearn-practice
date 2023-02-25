@@ -1,2 +1,2 @@
-tabs: ['linear_reg.py']
+tabs: ['poly_reg.py']
 terminals: ['pip install numpy; pip install pandas; pip install -U scikit-learn']
