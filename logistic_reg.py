@@ -14,15 +14,19 @@ X_train=sc_X.fit_transform(X_train)
 X_test=sc_X.transform(X_test)
 
 from sklearn.linear_model import LogisticRegression
+
 # START EDIT
+# Create a logistic regression classifier.
+# Use random_state=0,penalty='l2',C=0.1
 logistic_classifier=LogisticRegression(random_state=0,penalty='l2',C=0.1)
 
-# fit the classifier model with the data
+# Call fit method on the training dataset
 logistic_classifier.fit(X_train,y_train)
 
-#Predicting the test set result
+# Store predictions of X_test in y_pred
 y_pred=logistic_classifier.predict(X_test)
 # END EDIT
+
 print("Actual targets: ", y_test.to_numpy())
 print("Predicted targets: ", y_pred)
 
