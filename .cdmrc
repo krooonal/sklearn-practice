@@ -1,2 +1,2 @@
-tabs: ['cross_validation.py']
+tabs: ['grid_search.py']
 terminals: ['pip install numpy; pip install pandas; pip install -U scikit-learn']
