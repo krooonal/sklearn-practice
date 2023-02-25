@@ -19,13 +19,12 @@ from sklearn.svm import SVC
 
 # START EDIT
 # Create a SVC classifier with kernel='linear',random_state=0,degree=5.
-svc_classifier=SVC(kernel='linear',random_state=0,degree=5)
+svc_classifier=None
 
 # Call fit method on the training dataset
-svc_classifier.fit(X_train,y_train)
 
 # Store predictions of X_test in y_pred
-y_pred=svc_classifier.predict(X_test)
+y_pred=[]
 # END EDIT
 
 # To calculate the accuracy of the model
